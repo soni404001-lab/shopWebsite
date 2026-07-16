@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Gupta Trading - Premium Chocolates</title>
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf8f5;
+            color: #4a2c11;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #3d2314;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #f3a953;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f3a953;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(61, 35, 20, 0.7), rgba(61, 35, 20, 0.7)), url('https://images.unsplash.com/photo-1511381939415-e44015466834?q=80&w=1200') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #f3a953;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #f3a953;
+            color: #3d2314;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e0963f;
+            transform: scale(1.05);
+        }
+
+        /* Video Section (Ad Section) */
+        .video-section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .video-section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #3d2314;
+        }
+
+        .video-container {
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        video {
+            width: 100%;
+            display: block;
+        }
+
+        /* Features/Products Section */
+        .products {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #3d2314;
+            margin-bottom: 15px;
+        }
+
+        /* Footer & Contact */
+        footer {
+            background-color: #27140a;
+            color: #d9c5b6;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        .phone-link {
+            color: #f3a953;
+            font-size: 22px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo-text">Sri Gupta Trading</div>
+        <nav>
+            <a href="#about">हमारे बारे में</a>
+            <a href="#video">विज्ञापन वीडियो</a>
+            <a href="#products">चॉकलेट्स</a>
+            <a href="#contact">संपर्क करें</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>श्री गुप्ता ट्रेडिंग</h1>
+        <p>स्वाद और शुद्धता से भरी बेहतरीन प्रीमियम चॉकलेट्स</p>
+        <a href="tel:8579012345" class="btn">अभी ऑर्डर करें</a>
+    </section>
+
+    <!-- Ad Video Section -->
+    <section id="video" class="video-section">
+        <h2>हमारा विशेष विज्ञापन (Ad Video)</h2>
+        <div class="video-container">
+            <!-- नोट: 'your-video-file.mp4' की जगह अपने वीडियो का नाम या लिंक डालें -->
+            <video controls poster="https://images.unsplash.com/photo-1548907040-4d42b52115ca?q=80&w=800">
+                <source src="advideo.mp4" type="video/mp4">
+                आपका ब्राउज़र इस वीडियो को सपोर्ट नहीं करता है।
+            </video>
+        </div>
+    </section>
+
+    <!-- Products / Specialties Section -->
+    <section id="products" class="products">
+        <h2>हमारी खासियतें</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>प्रीमियम डार्क चॉकलेट</h3>
+                <p>कोको की भरपूर शुद्धता और बेहतरीन स्वाद का बेजोड़ संगम।</p>
+            </div>
+            <div class="card">
+                <h3>मिल्क और नट्स चॉकलेट</h3>
+                <p>कुरकुरे बादाम, काजू और क्रीमी मिल्क चॉकलेट का असली मज़ा।</p>
+            </div>
+            <div class="card">
+                <h3>थोक एवं रिटेल व्यापार</h3>
+                <p>शादी-पार्टी, त्योहारों या गिफ्टिंग के लिए बल्क ऑर्डर की विशेष सुविधा।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <section id="contact">
+        <footer>
+            <h3>श्री गुप्ता ट्रेडिंग (Sri Gupta Trading)</h3>
+            <p>चॉकलेट के थोक एवं फुटकर विक्रेता</p>
+            <p style="margin-top: 20px;">ऑर्डर या जानकारी के लिए कॉल करें:</p>
+            <a href="tel:8579012345" class="phone-link">📞 8579012345</a>
+            <p style="margin-top: 30px; font-size: 14px;">&copy; 2026 Sri Gupta Trading. All Rights Reserved.</p>
+        </footer>
+    </section>
+
+</body>
+</html>
